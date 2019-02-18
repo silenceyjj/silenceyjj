@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" href="../css/img/boqi.ico.png" type="image/x-icon"/>
+	<title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<style type="text/css">
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/reg.css"/>
+	<script src="../lib/require.js" data-main="../js/main.js"></script>
+</head>
+<body>
+	<div id="head">
+			<div class="headbar-auto">
+				<ul class="headerbar-left fl">
+					<li><a href="main.html" target="_blank">波奇网</a></li>
+					<li><a href="http://www.boqii.com/" target="_blank">波奇商城</a></li>
+					<li><a href="http://www.boqii.com/" target="_blank">波奇服务</a></li>
+					<li><a href="http://www.boqii.com/" target="_blank">波奇论坛</a></li>
+					<li><a href="http://www.boqii.com/" target="_blank">宠物百科</a></li>
+				</ul>
+				<ul class="headerbar-right fr">
+					<li class="left_n">
+						<a href="login.html" target="_blank">登录</a>
+					</li>
+					<li>
+						<a href="reg.html" target="_blank">注册</a>
+					</li>
+					<li class="head-weibo">
+						<a href="javascript:;"><em class="weibo"></em>微博</a>
+						<div class="wx_select none" style="display: none;">
+							<img src="../css/img/wb.jpg"/>
+						</div>
+					</li>
+					<li class="head-wechat">
+						<span><em class="weixin"></em>微信</span>
+						<div class="wx_select none" style="display: none;">
+							<img src="../css/img/wchat.jpg"/>
+						</div>
+					</li>
+					<li class="head-phone">
+						<a href="javascript:;"><em class="tel"></em>手机版</a>
+						<div class="none" style="display: none;">
+							<dt><img src="../css/img/tel.jpg"/></dt>
+							<div>
+								<p class="name">波奇宠物APP</p>
+								<p>注册享270,首单送330</p>
+								<p><a href="javascript:;" class="iphone fl"></a></p>
+								<p><a href="javascript:;" class="android fl"></a></p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="login_content">
+			<div class="head-auto">
+				<div class="login-top">
+					<a href="main.html" class="fl"><img src="../css/img/logo.png" alt="" /></a>
+					<h1 class="fl">用户注册</h1>
+					<p class="fr"><span>已有波奇账号, </span><a href="login.html">直接登录</a></p>
+				</div>
+				<div class="login-body clearfix">
+					<div class="reg-left fl">
+						<div class="reg-phone">
+							<p><em></em>手机注册</p>
+						</div>
+						<div class="reg-message">
+							<div class="reg-list clearfix">
+								<span class="reg-span">手机号码 : </span>
+								<input type="text" id="mobile" value="" placeholder="请输入手机号码"/>
+								<div class="tip" id="mobile_tip" style="display: none;"></div>
+							</div>
+							<div class="reg-list clearfix">
+								<span class="reg-span">设置密码 : </span>
+								<input type="password" id="password" value="" placeholder="6-20大小写英文字母、 数字或符号"/>
+								<div class="tip" id="password_tip" style="display: none;"></div>
+							</div>
+							<div class="reg-list clearfix">
+								<span class="reg-span">确认密码 : </span>
+								<input type="password" id="repassword" value="" placeholder="请再次输入密码"/>
+								<div class="tip" id="repassword_tip" style="display: none;"></div>
+							</div>
+							<div class="reg-list clearfix">
+								<span class="reg-span">昵称 : </span>
+								<input type="text" id="nickname" value="" placeholder="请输入昵称"/>
+								<div class="tip" id="nickname_tip" style="display: none;"></div>
+							</div>
+							<div class="reg-list clearfix">
+								<span class="reg-span">验证码 : </span>
+								<div id="yzm-border" class="fl">
+									<input type="text" id="reg-yzm" value="" />
+									<div class="tip" id="yzm_tip" style="display: none;">
+										<span></span>
+									</div>
+									
+								</div>
+								<div id="yzm-code" class="fl">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div id="change-code" class="fl" >
+									<a href="javascript:;" id="change">看不清？换一张</a>
+								</div>
+								
+							</div>
+							<div class="reg-list">
+								<span class="span-last">&nbsp</span>
+								<label class="xieyi">
+									<input type="checkbox" id="login-box" value="" />
+									我已阅读并同意
+									<a href="javascript:;">《波奇网服务协议》</a>
+								</label>
+							</div>
+							<div class="reg-list">
+								<span>&nbsp</span>
+								<a href="javascript:;" id="reg">注册</a>
+							</div>
+														
+						</div>
+					</div>
+					<div class="reg-right">
+						<img src="../css/img/reg3.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login_content">
+			<div class="footer-auto">
+				<div class="footer-con">
+					<p class="link">
+						<a href="http://www.boqii.com/about.html">关于波奇</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">友情链接</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">诚聘英才</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">联系我们</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">网站地图</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">意见反馈</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">帮助中心</a>
+						<span>|</span>
+						<span>客服热线 : 400-820-6098</span>
+					</p>
+					<p class="police">
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?"><img src="../css/img/police.png"/>泸公网安备310115020044955</a>
+						<span>|</span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+						<span>|</span>
+						<span>增值电信业务经营许可证 : </span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+					</p>
+					<p class="copyright">
+						Copyright @ 2007-2019 Boqii.com All Rights Reserved 光橙(上海) 信息科技有限公司 版权所有
+						<!--Copyright © 2007-2019 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有--> 
+					</p>
+					<p class="copyright">公司地址 : 上海市浦东新区盛夏路339号亚芯科技园1号楼6楼<span> | </span> 公司电话 : 021-61096226</p>
+					<p class="brand">
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_gs.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_cx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_kx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_zx.png"/></a>
+					</p>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

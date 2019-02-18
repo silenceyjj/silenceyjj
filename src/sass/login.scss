@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login_content{
+    width: 100%;
+    background: #F3F3F3;
+    .head-auto{
+        width: 990px;
+        margin: 0 auto;
+        .login-top{
+            padding: 20px 0 15px;
+            height: 88px;
+            h1{ 
+                margin:25px 0 0 10px ;
+                padding-left: 10px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 24px;
+                font-weight: bold;
+                border-left: 1px solid #ccc;
+            }
+        }
+        .login-body{
+//          height: 380px;
+            background: #fff;
+            border: 1px solid #DDDDDD;
+            padding: 9px;
+            padding-right: 44px;
+            .login-right{
+                float: left;
+                width: 410px;
+//              height: 355px;
+                padding-top: 25px;
+                margin-left: 45px;
+                .login-bar{
+                    width: 408x;
+                    height: 48px;
+                    border: 1px solid #DDDDDD;
+                    .login-tab{
+                        float: left;
+                        width: 204px;
+                        height: 38px;
+                        text-align: center;
+                        cursor: pointer;
+                        padding-top: 10px;
+                        font: 16px "Microsoft YaHei";
+                    }
+                    .login-tab:nth-child(1){
+                        width: 203px;
+                        border-right: 1px solid #DDDDDD;
+                    }
+                    .cur{
+                        height: 35px;
+                        border-bottom: 3px solid #FF6655;
+                    }
+                    
+                }
+                ul{
+                    height: 200px;
+                    width: 410px;
+                    position: relative;
+                    .login-by{
+                        position: absolute;
+                        #uname,#upsw,#uphone,#umsg{
+                            display: block;
+                            width: 364px;
+                            height: 48px;
+                            border: 1px solid #ddd;
+                            border-top: 0px;
+                        }
+                        #umsg{
+                            float: left;
+                            padding-left: 14px;
+                            width: 206px;
+                            border-right: 0px;
+                        }
+                        #umsg-yzm{
+                            float: left;
+                            display: block;
+                            width: 187px;
+                            height: 47px;
+                            border: 1px solid #FF6655;
+                            line-height: 47px;
+                            text-align: center;
+                        }
+                        #uname,#upsw,#uphone{
+                            padding-left: 44px;
+                        }
+                        i{  
+                            display: block;
+                            width: 44px;
+                            height: 48px;
+                            position: absolute;
+                            background: url("../css/img/login.png") 8px 15px no-repeat;
+                        }
+                        #icon2{
+                            background-position: -23px 15px;
+                        }
+                        #icon3{
+                            background: url("../css/img/login3.png") 1px 1px no-repeat ;
+                        }
+                        #veryfi{
+                            width: 410px;
+                            height: 50px;
+                            padding-top: 10px;
+                            .yzm{
+                               float: left;
+                               width: 188px;
+                               height: 48px;
+                               border: 1px solid #ddd; 
+                               padding-left: 36px;
+                                .suc{
+                                    background: url("../css/img/login.png") -4px -33px  no-repeat;
+                                }
+                                .yzmerr{
+                                    background: url("../css/img/login.png") -36px -33px  no-repeat;
+                                }
+                               #yzm-box{
+                                   float: left;
+                                   font: 16px/48px "Microsoft YaHei";
+                               }
+                               #yzm-txt{
+                                   width: 90px;
+                                   float: left;
+                               }
+                               #yzm_tip{
+                                   height: 24px;
+                                   padding: 13px 0;
+                                   margin-left: 8px;
+                                   text-align: center;
+                                   span{
+                                       display: block;
+                                       width: 20px;
+                                       height: 20px;
+                                   }
+                               }
+                               input{
+                                  padding-left: 4px;
+                                  width: 124px;
+                                  font: 14px/46px "Microsoft YaHei";
+                                  vertical-align: baseline;
+                               }
+                            }
+                            #yzm-code{
+                                float: left;
+                                display: inline-block;
+                                margin: 10px 40px 10px 20px;
+                                width: 70px;
+                                font:14px/30px "microsoft yahei";
+                                text-align: center;
+                                background: #CCCCCC;
+                                text-decoration:line-through;
+                                span{
+                                    display: inline-block;
+                                }
+                            }
+                            a{
+                                display: inline-block;
+                                margin-top: 20px;
+                                color: #1589DA;
+                            }
+                        }
+                        #login-msg{
+                            height: 30px;
+                            background: #FFEBEC;
+                            border: 1px solid #FFBDBF;
+                            line-height: 30px;
+                            padding-left: 10px;
+                            margin-top: 10px;
+                            color: #FF6655;
+                        }
+                        .login-auto{
+                            display: inline-block;
+                            height: 30px;
+                            margin-top: 10px;
+                            label{
+                                display: inline-block;
+                                margin-right: 220px;
+                            }
+                            a{
+                                color: #666666;
+                            }
+                        }
+                    }
+                }
+                .login-btn{
+                    background: #FF6655;
+                    border: 1px solid #E35342;
+                    font: 24px/46px "Microsoft YaHei";
+                    text-align: center;
+                    margin-bottom: 10px;
+                    #login{
+                        display: block;
+                        height: 46px;
+                        color: #fff;
+                    }
+                }
+                .login-txt{
+                    height: 14px;
+                    border-bottom: 1px solid #ccc;
+                    text-align: center;
+                    span{
+                        display: block;
+                        width: 140px;
+                        height: 30px;
+                        line-height: 30px;
+                        background: #fff;
+                        margin: 0 auto;
+                    }
+                }
+                .login-website{
+                    height: 16px;
+                    line-height: 16px;
+                    text-align: center;
+                    margin-top: 15px;
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+    .footer-auto{
+       width: 990px;
+       margin: 0 auto;
+       text-align: center;
+       .footer-con{
+           padding: 20px 0;
+           .link{
+               height: 22px;
+               padding: 4px 0;
+               a{
+                   color: #333;
+               }
+               a:hover{
+                   text-decoration: underline;
+               }
+           }
+           .police{
+               padding-top: 20px;
+               a{
+                   position: relative;
+                   color: #333333;
+               }
+               a:hover{
+                   text-decoration: underline;
+               }
+               img{
+                   position: absolute;
+                   left: -30px;
+                   top: -12px;
+               }
+           }
+           .copyright{
+               height: 12px;
+               padding-top: 15px;
+           }
+           .brand{
+               height: 35px;
+               padding-top: 15px;
+           }
+       }
+    }
+}

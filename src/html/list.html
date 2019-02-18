@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="../css/img/boqi.ico.png" type="image/x-icon"/>
+		<title>波奇商城</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<script src="../lib/require.js" data-main="../js/main.js"></script>
+	
+	<body>
+		<div id="toolbar">
+			<div class="toolbar_auto clearfix">
+				<div class="toolbar_l fl">
+					<div class="collect fl">
+						<em></em>
+						<a href="javascript:;">收藏波奇商城</a>
+					</div>
+					<div class="city fl">
+						<div class="city_l fl">
+							<em></em>
+							<strong id="cityInfo">广东</strong>
+							<p></p>
+						</div>
+						<div class="cityList" style="display: none;">
+							
+						</div>
+					</div>
+				</div>
+				<ul class="toolbar_r fr">
+					<li class="none"><a href="login.html">登录</a></li>
+					<li class="none"><a href="reg.html">注册</a></li>
+					<li class="tel">
+						<a href="javascript:;">手机版</a>
+						<div class="tel_select" style="display: none;">
+							<dt><img src="../css/img/tel.jpg"/></dt>
+							<div>
+								<p class="name">波奇宠物APP</p>
+								<p>注册立享270元, 首单再送330元</p>
+								<p><a href="javascript:;" class="iphone fl"></a></p>
+								<p><a href="javascript:;" class="android fl"></a></p>
+							</div>
+						</div>
+						
+					</li>
+					<li class="focus">
+						<a href="javascript:;">关注波奇</a>
+						<div class="focus_select clearfix" style="display: none;">
+							<div class="focus_l fl">
+								<img src="../css/img/wx.gif"/>
+								<p>官方微信</p>
+								<p>boqiiwang</p>
+							</div>
+							<div class="focus_l fl">
+								<img src="../css/img/wb.gif"/>
+								<p>官方微博</p>
+								<a href="main.html">波奇网</a>
+								<span></span>
+							</div>
+						</div>
+					</li>
+					<li class="menu">
+						<img src="../css/img/r_icon.png"/>
+						<a href="main.html" class="home">波奇首页</a>
+						<div class="menu_select" style="display: none;">
+							<a href="javascript:;"><em></em>波奇服务</a>
+							<a href="javascript:;"><em></em>波奇论坛</a>
+							<a href="javascript:;"><em></em>宠物百科</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="header">
+			<div class="header_auto">
+				<div class="logo fl"><a href="main.html"><img src="../img/shopnewlogo.png"/></a></div>
+				<div class="top_search fl">
+					<div class="search_t">
+						<form method="get">
+							<input type="text" id="searchword" class="searchword" placeholder="请输入关键词进行搜索"><input type="button" class="search_btn" value="搜 索">
+						</form>
+					</div>
+					<div class="search_b">
+                		热门搜索：
+                		<a href="javascript:;" target="_blank">进口狗粮</a>　
+                		<a href="javascript:;" target="_blank">进口猫粮</a>
+                　					<a href="javascript:;" target="_blank">猫厕所</a>　
+                		<a href="javascript:;" target="_blank">猫笼</a>　
+               			<a href="javascript:;" target="_blank">口腔护理</a>　
+                		<a href="javascript:;" target="_blank">美毛护肤</a>            
+					</div>
+					<div class="search_b"></div>
+				</div>
+				<div class="top_ad fr"><img src="../img/ad2.gif"></div>
+			</div>
+		</div>
+		
+		<div id="nav">
+			<div class="nav_auto">
+				<div class="nav_left">
+					<a href="javascript:;" class="clearfix"><span>全部商品分类</span><em></em></a>
+				</div>
+				<div class="nav_main fl">
+					<a href="main.html" class="current">首页</a>
+					<a href="javascript:;">狗狗</a>
+					<a href="javascript:;">猫猫</a>
+					<a href="javascript:;">小宠</a>
+					<a href="javascript:;">水族</a>
+					<a href="javascript:;">全球购</a>
+					<a href="javascript:;">创意生活</a>
+					<a href="javascript:;">品牌馆</a>
+					<a href="javascript:;">波奇服务</a>
+				</div>
+				<div class="nav_shop fr">
+					<div class="shop_c">
+						<div class="shop_text">
+							<em></em>
+							<a href="cart.html">购物车</a>
+						</div>
+						<span class="goodNum"></span>
+					</div>
+					<div class="shop_cart" style="display: none;">
+						<div class="cart_Tip cart_no">正在载入...</div>
+						<div class="cart_List cart_yes"></div>
+					</div>
+				</div>
+				<div id="allClassify" class="order" style="display: none;">
+					<div class="menu_list" style="height: 93px;">
+						<div class="menu_tit clearfix">
+							<em></em>
+							<a href="javascript:;">狗狗商品</a>
+							<span></span>
+						</div>
+						<ul class="menu_body">
+							<li><a href="#">主粮</a></li>
+							<li><a href="#">零食</a></li>
+							<li><a href="#">医疗</a></li>
+							<li><a href="#">保健</a></li>
+							<li><a href="#">出行</a></li>
+							<li><a href="#">日用</a></li>
+							<li><a href="#">玩具</a></li>
+							<li><a href="#">美容</a></li>
+						</ul>
+						<ul class="menu_detail" style="display: none;">
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+						<li class="clearfix">
+							<p><a href="javascript:;">狗狗主粮</a></p>
+							<div>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+								<a href="javascript:;">进口粮</a>
+							</div>
+						</li>
+					</ul>
+
+					</div>
+					<div class="menu_list" style="height: 92px;">
+						<div class="menu_tit clearfix">
+							<em class="cat"></em>
+							<a href="javascript:;">猫猫用品</a>
+							<span></span>
+						</div>
+						<ul class="menu_body">
+							<li><a href="#">主粮</a></li>
+							<li><a href="#">零食</a></li>
+							<li><a href="#">医疗</a></li>
+							<li><a href="#">保健</a></li>
+							<li><a href="#">出行</a></li>
+							<li><a href="#">日用</a></li>
+							<li><a href="#">玩具</a></li>
+							<li><a href="#">美容</a></li>
+						</ul>
+					</div>
+					<div class="menu_list" style="height: 48px;">
+						<div class="menu_tit clearfix">
+							<em class="rabit"></em>
+							<a href="javascript:;">奇趣小宠</a>
+							<span></span>
+						</div>
+						<ul class="menu_body">
+							<li><a href="#">兔子</a></li>
+							<li><a href="#">仓鼠</a></li>
+							<li><a href="#">龙猫</a></li>
+						</ul>
+					</div>
+					<div class="menu_list" style="height: 70px;">
+						<div class="menu_tit clearfix">
+							<em class="fish"></em>
+							<a href="javascript:;">水族市场</a>
+							<span></span>
+						</div>
+						<ul class="menu_body">
+							<li><a href="#">鱼食</a></li>
+							<li><a href="#">鱼缸</a></li>
+							<li><a href="#">器材</a></li>
+							<li><a href="#">药水</a></li>
+							<li><a href="#">造景</a></li>
+						</ul>
+					</div>
+					<div class="menu_list" style="height: 52px;">
+						<div class="menu_tit clearfix">
+							<em class="cos"></em>
+							<a href="javascript:;">萌宠周边</a>
+							<span></span>
+						</div>
+						<ul class="menu_body">
+							<li><a href="#">布艺</a></li>
+							<li><a href="#">装饰</a></li>
+							<li><a href="#">家居</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="breadcrumb">
+				<div class="breadcrumb_container clearfix">
+					<div class="breadcrumbNav fl">
+						<div class="floatLeft">
+							<a href="javascript:;" class="breadcrumbNav_link">首页</a>
+							<i class="arror_right"> > </i>
+							<a href="javascript:;" class="breadcrumbNav_link">萌宠周边</a>
+							<i class="arror_right"> > </i>
+							<a href="javascript:;" class="breadcrumbNav_link">生活家居</a>
+							<i class="arror_right"> > </i>
+						</div>
+						<div class="search_form floatLeft">
+							<input type="text" id="keyword" value="在结果中查找"/>
+							<input type="button" class="search_icon"/>
+						</div>
+					</div>
+					<div class="breadcrumbRight fr">
+						<a href="javascript:;">清空已选条件</a>
+					</div>
+				</div>
+			</div>
+			<div id="listcontainer">
+				<div id="listcontent">
+					<div class="leftBar">
+						<div class="goodsCate">
+							<p class="goodsCateTitle">
+								萌宠周边
+							</p>
+							<ul class="goodsCateList">
+								<li class="goodsCateList_li">
+									<h2 class="goodsCateSubTitle">
+										<a href="javascript:;"><span>餐饮用品</span></a>
+										<i class="icons arrow_down"></i>
+									</h2>
+									<div class="goodsCateSub" style="display: none;">
+										<a href="javascript:;">杯子</a>
+										<a href="javascript:;">碗具</a>
+										<a href="javascript:;">餐垫</a>
+									</div>
+								</li>
+								<li class="goodsCateList_li">
+									<h2 class="goodsCateSubTitle">
+										<a href="javascript:;"><span>布衣生活</span></a>
+										<i class="icons arrow_down"></i>
+									</h2>
+									<div class="goodsCateSub" style="display: none;">
+										<a href="javascript:;">抱枕枕靠</a>
+										<a href="javascript:;">地垫地毯</a>
+										<a href="javascript:;">公仔玩偶</a>
+										<a href="javascript:;">门帘布盖</a>
+										<a href="javascript:;">口罩眼罩</a>
+										<a href="javascript:;">居家服装</a>
+									</div>
+								</li>
+								<li class="goodsCateList_li goodsCateList_on">
+									<h2 class="goodsCateSubTitle">
+										<a href="javascript:;"><span>生活家居</span></a>
+										<i class="icons arrow_down"></i>
+									</h2>
+									<div class="goodsCateSub" style="display: none;">
+										<a href="javascript:;">电子周边</a>
+										<a href="javascript:;">居家用具</a>
+									</div>
+								</li>
+								<li class="goodsCateList_li">
+									<h2 class="goodsCateSubTitle">
+										<a href="javascript:;"><span>出行箱包</span></a>
+										<i class="icons arrow_down"></i>
+									</h2>
+									<div class="goodsCateSub" style="display: none;">
+										<a href="javascript:;">宠物背包</a>
+										<a href="javascript:;">挎包零钱包</a>
+										<a href="javascript:;">车载用品</a>
+										<a href="javascript:;">其他用品</a>
+									</div>
+								</li>
+								<li class="goodsCateList_li">
+									<h2 class="goodsCateSubTitle">
+										<a href="javascript:;"><span>装饰工艺</span></a>
+										<i class="icons arrow_down"></i>
+									</h2>
+									<div class="goodsCateSub" style="display: none;">
+										<a href="javascript:;">工艺礼品</a>
+										<a href="javascript:;">墙画壁画</a>
+										<a href="javascript:;">珠宝饰品</a>
+										<a href="javascript:;">装饰摆件</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="brands">
+							<h2 class="bar_title brands_title">品牌推荐</h2>
+							<ul>
+								<li><a href="javascript:;"><img src="../img/list_brand1.jpg" alt="" /></a></li>
+								<li class="noright"><a href="javascript:;"><img src="../img/list_brand2.jpg" alt="" /></a></li>
+								<li><a href="javascript:;"><img src="../img/list_brand3.jpg" alt="" /></a></li>
+								<li class="noright"><a href="javascript:;"><img src="../img/list_brand4.jpg" alt="" /></a></li>
+								<li><a href="javascript:;"><img src="../img/list_brand5.jpg" alt="" /></a></li>
+								<li class="noright"><a href="javascript:;"><img src="../img/list_brand6.jpg" alt="" /></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="rightBar">
+						<div class="filter_container">
+							<div class="filter_item clearfix">
+								<div class="filter_title">品牌</div>
+								<div class="filter_con_list">
+									<a href="javascript:;">La West</a>
+									<a href="javascript:;">loongdesign</a>
+									<a href="javascript:;">飘艾儿</a>
+									<a href="javascript:;">LaurelBurch</a>
+									<a href="javascript:;">IME</a>
+									<a href="javascript:;">PAINI</a>
+								</div>
+								<div class="more_filter_con fl">
+									<span class="more_choose">+多选</span>
+									<a href="javascript:;">
+										<span>更多</span>
+										<i class="icons arrow_down_red"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="sort">
+							<div class="sort_left">
+								<span>排序:</span>
+								<a href="javascript:;" class="init">综合排序</a>
+								<a href="javascript:;" class="sold">
+									<span>销量</span>
+									<i class="icons icon_up"></i>
+								</a>
+								<a href="javascript:;" class="hot">
+									<span>人气</span>
+									<i class="icons icon_up"></i>
+								</a>
+								<a href="javascript:;" class="price">
+									<span>价格</span>
+									<i class="icons icon_up"></i>
+								</a>
+								<a href="javascript:;" class="new">
+									<span>新品</span>
+									<i class="icons icon_up"></i>
+								</a>
+								<a href="javascript:;" class="comment">
+									<span>评论</span>
+									<i class="icons icon_up"></i>
+								</a>
+								<span class="sousuo sort_box cuxiao ">
+									<a href="javascript:;">
+										<i class="fl"></i>
+										<em>全球购</em>
+									</a>
+								</span>
+								<span class="sousuo sort_box youhuo">
+									<a href="javascript:;">
+										<i class="fl"></i>
+										<em>只显示有货</em>
+									</a>
+								</span>
+							</div>
+							<div class="sort_right">
+								<div class="sort_right_left">
+									<span class="product_total"></span>
+									<span class="product_page">
+										<em class="product_page_current"></em>
+										/
+										<em class="product_page_total"></em>
+									</span>
+								</div>
+								<div class="sort_right_right fl">
+									<a href="javascript:;" title="上一页" class="prev_page"> < </a>
+									<a href="javascript:;" title="下一页" class="next_page"> > </a>
+								</div>
+							</div>
+						</div>
+						<div class="product_container">
+							<div>
+								<ul class="product_list">
+									<!--<li>
+										<div class="self-support"></div>
+										<div class="product_list_container">
+											<a href="javascript:;"><img src="../img/list1.jpg" class="product_image"/></a>
+											<p class="product_price">
+												<strong>¥299</strong>
+												<span class="price_unit" style="display: inline;"></span>
+												<p class="product_price"></p>
+											</p>
+											<p class="product_name">
+												<a href="javascript:;">飘艾儿PUREAYRE 空气净化车充典雅白（含一颗胶囊）GMEPCCC01</a>
+											</p>
+											<p class="product_active"></p>
+											<div class="product_status">
+												<span class="product_status">
+													已售0
+												</span>
+												&nbsp;&nbsp;&nbsp;&nbsp;
+												<a href="javascript:;" class="product_comment">
+													已有
+													<em>0</em>
+													人评价
+												</a>
+											</div>
+											<div class="operation">
+												<div class="add_cart">
+													<a href="javascript:;">
+														<i class="icons icon_cart"></i>
+														<span>加入购物车</span>
+													</a>
+												</div>
+												<div class="do_attention">
+													<a href="javascript:;">
+														<i class="icons icon_fav"></i>
+														<span>收藏</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</li>-->
+								</ul>
+								<div class="pagination">
+									<!--<a href="javascript:;" title="转到第一页">1</a>
+									<a href="javascript:;" title="下一页">   下一页 > </a>
+									<a href="javascript:;" title="末页">末页</a>
+									<span class="total_page">共3页</span>
+									<span>到第&nbsp;&nbsp;<input type="text" class="go_page_text"/>&nbsp;&nbsp;页</span>
+									<input type="button" id="goPages" value="确定" class="go_page_button">-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="foot_service">
+			<div class="foot_s_body">
+				<dl class="fl">
+		            <dt class="foot_s_1"></dt>
+		            <dd class="name">正品保障</dd>
+		            <dd>全场正品　假一罚十</dd>
+		        </dl>
+		        <dl class="fl">
+		            <dt class="foot_s_2"></dt>
+		            <dd class="name">闪电发货</dd>
+		            <dd>7省满59免运费</dd>
+		        </dl>
+		        <dl class="fl">
+		            <dt class="foot_s_3"></dt>
+		            <dd class="name">无忧退换</dd>
+		            <dd>七天退换	购买无忧</dd>
+		        </dl>
+		        <dl class="fl">
+		            <dt class="foot_s_4"></dt>
+		            <dd class="name">优质服务</dd>
+		            <dd>品类丰富	多快好省</dd>
+		        </dl>
+		        <dl class="fl">
+		            <dt class="foot_s_5"></dt>
+		            <dd class="name">诚信电商</dd>
+		            <dd>宠友放心　值得信赖</dd>
+		        </dl>
+			</div>
+		</div>
+		<div id="link">
+			<div class="link_auto">
+				<dl>
+		            <dt>新手上路</dt>
+		            <dd><a target="_blank" href="javascript:;">购物流程</a></dd>
+		            <dd><a target="_blank" href="javascript:;">现金账户</a></dd>
+		            <dd><a target="_blank" href="javascript:;">优惠券</a></dd>
+		            <dd><a target="_blank" href="javascript:;">订单查询</a></dd>
+		            <dd><a target="_blank" href="javascript:;">服务协议</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>购买方式</dt>
+		            <dd><a target="_blank" href="javascript:;">余额支付</a></dd>
+		            <dd><a target="_blank" href="javascript:;">网上支付</a></dd>
+		            <dd><a target="_blank" href="javascript:;">银行汇款</a></dd>
+		            <dd><a target="_blank" href="javascript:;">货到付款</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>配送方式</dt>
+		            <dd><a target="_blank" href="javascript:;">配送方式</a></dd>
+		            <dd><a target="_blank" href="javascript:;">收费标准</a></dd>
+		            <dd><a target="_blank" href="javascript:;">配送时间</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>售后服务</dt>
+		            <dd><a target="_blank" href="javascript:;">如何退换货</a></dd>
+		            <dd><a target="_blank" href="javascript:;">如何退款</a></dd>
+		            <dd><a target="_blank" href="javascript:;">退换货流程 </a></dd>
+		            <dd><a target="_blank" href="javascript:;">客服电话</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>常见问题</dt>
+		            <dd><a target="_blank" href="javascript:;">注册登录</a></dd>
+		            <dd><a target="_blank" href="javascript:;">波奇豆</a></dd>
+		            <dd><a target="_blank" href="javascript:;">热点问题</a></dd>
+		        </dl>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer_auto">
+				<div class="footer_bot">
+					<p class="link">
+						<a href="javascript:;">关于波奇</a><span>|</span>
+						<a href="javascript:;">友情链接</a><span>|</span>
+						<a href="javascript:;">诚聘英才</a><span>|</span>
+						<a href="javascript:;">联系我们</a><span>|</span>
+						<a href="javascript:;">网站地图</a><span>|</span>
+						<a href="javascript:;">意见反馈</a><span>|</span>
+						<a href="javascript:;">帮助中心</a><span>|</span>
+						<a href="javascript:;">客服热线：400-820-6098</a>
+					</p>
+					<p class="police">
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?"><img src="../css/img/police.png"/>泸公网安备310115020044955</a>
+						<span>|</span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+						<span>|</span>
+						<span>增值电信业务经营许可证 : </span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+					</p>
+					<p class="copyright">
+						Copyright @ 2007-2019 Boqii.com All Rights Reserved 光橙(上海) 信息科技有限公司 版权所有
+						<!--Copyright © 2007-2019 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有--> 
+					</p>
+					<p class="copyright">公司地址 : 上海市浦东新区盛夏路339号亚芯科技园1号楼6楼<span> | </span> 公司电话 : 021-61096226</p>
+					<p class="brand">
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_gs.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_cx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_kx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_zx.png"/></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="ISlide RightFloatNavWrap">
+			<div class="RightFloatNav">
+				<div class="RightFloatNavBox" style="margin-top: -153.5px;">
+					<ul class="sbar_oper">
+						<li>
+							<a href="javascript:;">
+								<i class="i_sbar_my">
+								</i>
+							</a>
+						</li>
+						<li class="ISlideCartIcon sbar_cart">
+							<a href="javascript:;">
+								<i class="i_sbar_cat"></i>
+								<span class="sbar_cart_text">购物车</span>
+								<i class="ISlideCartNum i_sbar_nub">4</i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="i_sbar_asset"></i>
+								<span>资产</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="i_sbar_fav"></i>
+								<span>收藏</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="i_sbar_ask"></i>
+								<span>咨询</span>
+							</a>
+						</li>
+						<li class="sbar_last">
+							<a href="javascript:;">
+								<i class="i_sbar_app"></i>
+								<span>APP</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="sbar_top" id="topcontrol">
+					<div class="nreturn">
+						<a href="javascript:;" id="sider_returntop">
+							<i class="i_sbar_return"></i>
+							<span>TOP</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="../css/img/boqi.ico.png" type="image/x-icon"/>
+		<title>用户登录</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	<script src="../lib/require.js" data-main="../js/main.js"></script>
+	<body>
+		<div class="login_content">
+			<div class="head-auto">
+				<div class="login-top">
+					<a href="main.html" class="fl"><img src="../css/img/logo.png" alt="" /></a>
+					<h1 class="fl">用户登录</h1>
+				</div>
+				<div class="login-body clearfix">
+					<a href="javascript:;" class="fl"><img src="../css/img/logindog.png"/></a>
+					<div class="login-right">
+						<div class="login-bar clearfix">
+							<div class="login-tab cur">账号密码登录</div>
+							<div class="login-tab">手机动态码登录</div>
+						</div>
+						<ul>
+							<li class="login-by">
+								<i></i><input type="text" id="uname" placeholder="输入用户名/邮箱/手机号" />
+								<i id="icon2"></i><input type="password" id="upsw" />
+								<div id="veryfi">
+									<div class="yzm">
+										<span id="yzm-box">验证码 :</span><input type="text" id="yzm-txt"/>
+										<div class="tip fl" id="yzm_tip">
+											<span></span>
+										</div>
+									</div>
+									<div id="yzm-code" class="fl">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<div id="change-code" class="fl" >
+										<a href="javascript:;" id="change">换一张</a>
+									</div>
+								</div>
+								<div id="login-msg" style="display: none;">
+									
+								</div>
+								<div class="login-auto">
+									<label for="tick1">
+										<input type="checkbox" name="tick1" id="tick1"/>
+										自动登录
+									</label>
+									<a href="reg.html">忘记密码</a>
+									| 
+									<a href="reg.html">免费注册</a>
+									
+								</div>
+							</li>
+							<li class="login-by" style="display: none;">
+								<i id="icon3"></i><input type="text" id="uphone" placeholder="请输入手机号" />
+								<input type="text" id="umsg" placeholder="请输入短信验证码"/>
+								<span id="umsg-yzm">获取验证码</span>
+								<div class="login-auto">
+									<label for="tick2">
+										<input type="checkbox" name="tick2" id="tick2"/>
+										自动登录
+									</label>
+								</div>
+							</li>
+						</ul>
+						<div class="login-btn">
+							<a href="javascript:void(0)" id="login">登	录</a>
+						</div>
+						<div class="login-txt">
+							<span>使用合作网站账号登录</span>
+						</div>
+						<div class="login-website">
+							<a href="https://auth.alipay.com/login/express.htm?">支付宝</a>
+							|
+							<a href="https://api.weibo.com/oauth2/authorize?">新浪微博</a>
+							|
+							<a href="https://open.weixin.qq.com/connect/qrconnect?">微信</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login_content">
+			<div class="footer-auto">
+				<div class="footer-con">
+					<p class="link">
+						<a href="http://www.boqii.com/about.html">关于波奇</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">友情链接</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">诚聘英才</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">联系我们</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">网站地图</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">意见反馈</a>
+						<span>|</span>
+						<a href="http://www.boqii.com/about.html">帮助中心</a>
+						<span>|</span>
+						<span>客服热线 : 400-820-6098</span>
+					</p>
+					<p class="police">
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?"><img src="../css/img/police.png"/>泸公网安备310115020044955</a>
+						<span>|</span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+						<span>|</span>
+						<span>增值电信业务经营许可证 : </span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+					</p>
+					<p class="copyright">
+						Copyright @ 2007-2019 Boqii.com All Rights Reserved 光橙(上海) 信息科技有限公司 版权所有
+						<!--Copyright © 2007-2019 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有--> 
+					</p>
+					<p class="copyright">公司地址 : 上海市浦东新区盛夏路339号亚芯科技园1号楼6楼<span> | </span> 公司电话 : 021-61096226</p>
+					<p class="brand">
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_gs.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_cx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_kx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_zx.png"/></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
