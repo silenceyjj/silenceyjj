@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="../css/img/boqi.ico.png" type="image/x-icon"/>
+		<title>购物车</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+	<script src="../lib/require.js" data-main="../js/main.js"></script>
+	<body>
+		<div id="toolbar">
+			<div class="toolbar_auto clearfix">
+				<div class="toolbar_l fl">
+					<div class="collect fl">
+						<em></em>
+						<a href="javascript:;">收藏波奇商城</a>
+					</div>
+					<div class="city fl">
+						<div class="city_l fl">
+							<em></em>
+							<strong id="cityInfo">广东</strong>
+							<p></p>
+						</div>
+						<div class="cityList" style="display: none;">
+							
+						</div>
+					</div>
+				</div>
+				<ul class="toolbar_r fr">
+					<li class="none"><a href="login.html">登录</a></li>
+					<li class="none"><a href="reg.html">注册</a></li>
+					<li class="tel">
+						<a href="javascript:;">手机版</a>
+						<div class="tel_select" style="display: none;">
+							<dt><img src="../css/img/tel.jpg"/></dt>
+							<div>
+								<p class="name">波奇宠物APP</p>
+								<p>注册立享270元, 首单再送330元</p>
+								<p><a href="javascript:;" class="iphone fl"></a></p>
+								<p><a href="javascript:;" class="android fl"></a></p>
+							</div>
+						</div>
+						
+					</li>
+					<li class="focus">
+						<a href="javascript:;">关注波奇</a>
+						<div class="focus_select clearfix" style="display: none;">
+							<div class="focus_l fl">
+								<img src="../css/img/wx.gif"/>
+								<p>官方微信</p>
+								<p>boqiiwang</p>
+							</div>
+							<div class="focus_l fl">
+								<img src="../css/img/wb.gif"/>
+								<p>官方微博</p>
+								<a href="main.html">波奇网</a>
+								<span></span>
+							</div>
+						</div>
+					</li>
+					<li class="menu">
+						<img src="../css/img/r_icon.png"/>
+						<a href="main.html" class="home">波奇首页</a>
+						<div class="menu_select" style="display: none;">
+							<a href="javascript:;"><em></em>波奇服务</a>
+							<a href="javascript:;"><em></em>波奇论坛</a>
+							<a href="javascript:;"><em></em>宠物百科</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+
+		</div>
+		<div id="header">
+			<div class="top_auto">
+				<div class="logo fl">
+					<a href="main.html">
+						<img src="../img/shopnewlogo.png" alt="" />
+					</a>
+				</div>
+				<div class="cart_process">
+					<ul class="steps step_1">
+						<li class="process_cart">我的购物车</li>
+						<li class="process_info">核对订单信息</li>
+						<li class="process_success">订单提交成功</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="login_tips" style="display: none;">
+			<i class="icons icon_warn"></i>
+			您还没有登录!
+			<a href="login.html" class="btn_link">登录</a>
+			后您的商品将永久保存在"购物车"中
+		</div> 
+		<!--购物车为空时-->
+		<div id="wrap" style="display: none;">
+			<div class="shopcart_empty">
+				<div class="success_info order_success">
+					<div class="shopcart_empty_tips">
+						<i class="icons icon_bigcart"></i>
+						您的购物车还是空的，赶紧给爱宠&nbsp;
+						<a href="/">挑点什么</a>
+						&nbsp;吧
+					</div>
+					<p class="error_operation">
+						<a href="main.html" class="btn primary_btn">返回首页</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--购物车有商品时-->
+		<div id="wrap2" style="display: none;">
+			<div class="yunfei_info clearfix">
+				<span class="yunfei">波奇商城自营商品（江浙沪皖京津粤满59元即免运费）</span>
+				<a href="main.html" class="goonshopping fr">继续购物 > </a>
+			</div>
+			<div class="shopcart_full">
+				<div class="cart_list">
+					<div class="cart_header clearfix">
+						<div class="cart_header_first cart_column_01">
+							<input type="checkbox" name="" id="allchecked1" checked="checked" value="" />
+							<label for="allchecked1">全选</label>
+						</div>
+						<div class="cart_column_02">
+							<span>商品</span>
+						</div>
+						<div class="cart_column_03">重量</div>
+						<div class="cart_column_04">波奇价(元)</div>
+						<div class="cart_column_05">优惠</div>
+						<div class="cart_column_06">数量</div>
+						<div class="cart_column_07">小计(元)</div>
+						<div class="cart_column_08 cart_header_last">
+							<span>操作</span>
+						</div>
+					</div>
+					<ul class="cart_goodslist">
+						<!--<li id="1" class="clearfix">
+							<div class="cart_column_01">
+								<input type="checkbox" name="" id="" value="" class="check_btn"/>
+								<a href="javascript:;">
+									<img src="../img/good1.jpg" class="product_img"/>
+								</a>
+							</div>
+							<div class="cart_column_02">
+								<a href="javascript:;" class="product_name">
+									LA WEST 夏日凉扇狗狗可爱扇子手持PP卡通便携塑料扇
+								</a>
+								<p class="product_spec">
+									规格: 
+           							柯基,塑料扇
+           							<span class="tags">品牌直送</span>
+								</p>
+								
+							</div>
+							<div class="cart_column_03">
+								<span>0.20kg</span>
+							</div>
+							<div class="cart_column_04">
+								<span class="product_price">10.90</span>
+							</div>
+							<div class="cart_column_05">
+								<span style="text-indent:-99999px;">&nbsp;</span>
+							</div>
+							<div class="cart_column_06">
+								<div class="product_price_modify clearfix">
+									<a href="javascript:;" class="IDecNum decrease">-</a>
+									<input type="text" value="1" class="IGoodsNum product_nums">
+									<a href="javascript:;" class="IIncNum increase">+</a>
+								</div>
+							</div>
+							<div class="cart_column_07">
+								<p class="product_total">
+									<strong class="product_price">10.90</strong>
+								</p>
+							</div>
+							<div class="cart_column_08">
+								<a href="javascript:;" class="IAddFavorites product_operation">移入收藏</a>
+								<br />
+								<a href="javascript:;" class="ICartRemove product_operation delete_shopcart">删除</a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--结算栏-->
+		<div class="cart_footer clearfix" style="display: none;">
+			<div class="xuanze">
+				<input type="checkbox" name="" id="allchecked2" checked="checked" value="" />
+				<label for="allchecked2">全选</label>
+			</div>
+			<a href="javascript:;" class="ICartRemoves delete_shopcarts">
+				<strong>删除选中的商品</strong>
+			</a>
+			<a href="javascript:;" class="ICartClear">
+				<strong>清空购物车</strong>
+			</a>
+			<div class="cart_jiesuan">
+				<div class="product_sum_info clearfix">
+					<p>
+                		 已选择
+                		 <strong class="item_sum">2</strong>
+                		 件商品（总重：0.00kg），总价（不含运费）：
+                		 <em class="product_sum">¥64.70</em>
+             		</p>
+             		<p>
+                		  已节省：¥0.00
+              		</p>
+              		<p class="s_money">
+				           <!--总价= 商品总价:&nbsp;¥64.70
+				    +
+                 	全球购商品税费:&nbsp;¥0.00-->
+              		</p>
+				</div>
+				<div class="product_sum_jisuan">
+					<a href="javascript:;" class="ICartSubmit">去结算</a>
+				</div>
+			</div>
+		</div>
+		<div id="link">
+			<div class="link_auto">
+				<dl>
+		            <dt>新手上路</dt>
+		            <dd><a target="_blank" href="javascript:;">购物流程</a></dd>
+		            <dd><a target="_blank" href="javascript:;">现金账户</a></dd>
+		            <dd><a target="_blank" href="javascript:;">优惠券</a></dd>
+		            <dd><a target="_blank" href="javascript:;">订单查询</a></dd>
+		            <dd><a target="_blank" href="javascript:;">服务协议</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>购买方式</dt>
+		            <dd><a target="_blank" href="javascript:;">余额支付</a></dd>
+		            <dd><a target="_blank" href="javascript:;">网上支付</a></dd>
+		            <dd><a target="_blank" href="javascript:;">银行汇款</a></dd>
+		            <dd><a target="_blank" href="javascript:;">货到付款</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>配送方式</dt>
+		            <dd><a target="_blank" href="javascript:;">配送方式</a></dd>
+		            <dd><a target="_blank" href="javascript:;">收费标准</a></dd>
+		            <dd><a target="_blank" href="javascript:;">配送时间</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>售后服务</dt>
+		            <dd><a target="_blank" href="javascript:;">如何退换货</a></dd>
+		            <dd><a target="_blank" href="javascript:;">如何退款</a></dd>
+		            <dd><a target="_blank" href="javascript:;">退换货流程 </a></dd>
+		            <dd><a target="_blank" href="javascript:;">客服电话</a></dd>
+		        </dl>
+		        <dl>
+		            <dt>常见问题</dt>
+		            <dd><a target="_blank" href="javascript:;">注册登录</a></dd>
+		            <dd><a target="_blank" href="javascript:;">波奇豆</a></dd>
+		            <dd><a target="_blank" href="javascript:;">热点问题</a></dd>
+		        </dl>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer_auto">
+				<div class="footer_bot">
+					<p class="link">
+						<a href="javascript:;">关于波奇</a><span>|</span>
+						<a href="javascript:;">友情链接</a><span>|</span>
+						<a href="javascript:;">诚聘英才</a><span>|</span>
+						<a href="javascript:;">联系我们</a><span>|</span>
+						<a href="javascript:;">网站地图</a><span>|</span>
+						<a href="javascript:;">意见反馈</a><span>|</span>
+						<a href="javascript:;">帮助中心</a><span>|</span>
+						<a href="javascript:;">客服热线：400-820-6098</a>
+					</p>
+					<p class="police">
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?"><img src="../css/img/police.png"/>泸公网安备310115020044955</a>
+						<span>|</span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+						<span>|</span>
+						<span>增值电信业务经营许可证 : </span>
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?">泸公网安备</a>
+					</p>
+					<p class="copyright">
+						Copyright @ 2007-2019 Boqii.com All Rights Reserved 光橙(上海) 信息科技有限公司 版权所有
+						<!--Copyright © 2007-2019 Boqii.com All Rights Reserved 光橙（上海）信息科技有限公司 版权所有--> 
+					</p>
+					<p class="copyright">公司地址 : 上海市浦东新区盛夏路339号亚芯科技园1号楼6楼<span> | </span> 公司电话 : 021-61096226</p>
+					<p class="brand">
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_gs.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_cx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_kx.png"/></a>
+						<a href="http://www.sgs.gov.cn/lz/licenseLink.do?"><img src="../css/img/foot_zx.png"/></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div class="IAlertMask mask" style="display: none; opacity: 0;"></div>
+		<div class="IAlertDialog model_dialog order_detail_dialog warn_dialog" style="display: none; margin-top: -150px;">
+			<h1 class="model_dialog_title">
+				提示
+				<a href="javascript:;" class="IDialogClose icons icon_close"></a>
+			</h1>
+			<div class="IDialogText model_dialog_body">
+				<!--<span>最少购买1件</span>-->
+				<!--<div class="go_url_operation">
+					<a href="car.html" class="myFav">查看购物车</a>
+				</div>-->
+			</div>
+			<div class="auto_close">3秒钟后自动关闭</div>
+		</div>
+	</body>
+</html>
